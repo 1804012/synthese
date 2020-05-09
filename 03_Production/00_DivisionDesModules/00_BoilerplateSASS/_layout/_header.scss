@@ -23,6 +23,17 @@ header {
     & p {
         width: 25%;
         margin: auto;
+
+        &::before {
+            display: inline-block;
+            content: "";
+            width: 2.5em;
+            height: 5px;
+            background-color: var(--cyan);
+            margin-right: 1em;
+            margin-bottom: 0.25em;
+            margin-left: 1em;
+        }
     }
 
 }

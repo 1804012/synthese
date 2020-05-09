@@ -6,11 +6,11 @@ ________________________________________________________*/
   --gris: hsl(0, 0%, 23%);
   --noir: hsl(0, 0%, 0%);
   --blanc: hsl(0, 0%, 100%);
-  --gris: hsl(343, 100%, 50%);
+  --magenta: hsl(343, 100%, 50%);
   /* VARIABLES DES FONTS*/
   --exo: 'Exo', sans-serif;
   --raleway: 'Raleway', sans-serif;
-  --Marker: 'Permanent Marker', cursive;
+  --marker: 'Permanent Marker', cursive;
 }
 
 /*////[MIXINS]
@@ -394,6 +394,110 @@ a {
   color: var(--noir);
 }
 
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: '';
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
 /*////[GRILLE DESKTOP]
 ________________________________________________________*/
 body {
@@ -433,6 +537,17 @@ header div.logo {
 header p {
   width: 25%;
   margin: auto;
+}
+
+header p::before {
+  display: inline-block;
+  content: "";
+  width: 2.5em;
+  height: 5px;
+  background-color: var(--cyan);
+  margin-right: 1em;
+  margin-bottom: 0.25em;
+  margin-left: 1em;
 }
 
 /*////[NAVIGATION]
@@ -533,6 +648,72 @@ nav ul a:hover {
 ________________________________________________________*/
 /*////[CAROUSEL]
 ________________________________________________________*/
+section.carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  background-color: var(--gris);
+  color: var(--blanc);
+  height: 22.5em;
+}
+
+section.carousel div.txt_carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  width: 40%;
+}
+
+section.carousel div.txt_carousel h2 {
+  font-family: var(--raleway);
+  color: var(--cyan);
+  font-size: 2.5em;
+  font-weight: bolder;
+}
+
+section.carousel div.txt_carousel p {
+  width: 35%;
+}
+
+section.carousel div.txt_carousel a.btn {
+  background-color: var(--noir);
+  color: var(--blanc);
+  border: 1px solid var(--magenta);
+  border-radius: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+section.carousel div.gallerie_carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 60%;
+}
+
+section.carousel div.gallerie_carousel div.num_carousel span {
+  color: var(--magenta);
+}
+
+section.carousel div.gallerie_carousel div.num_carousel a {
+  font-family: var(--marker);
+  color: var(--blanc);
+}
+
 /*////[COMMANDE]
 ________________________________________________________*/
 /*////[FOOTER]

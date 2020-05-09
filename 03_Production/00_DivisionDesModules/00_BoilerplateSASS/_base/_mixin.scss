@@ -1,2 +1,14 @@
 /*////[MIXINS]
 ________________________________________________________*/
+@mixin bouton {
+    background-color: var(--noir);
+    color: var(--blanc);
+    border: 1px solid var(--magenta);
+    border-radius: 0.5em;
+    padding: {
+        top: 0.5em;
+        bottom: 0.5em;
+        left: 1em;
+        right: 1em;
+    }
+}

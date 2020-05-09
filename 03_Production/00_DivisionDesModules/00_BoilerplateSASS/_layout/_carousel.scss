@@ -1,2 +1,48 @@
 /*////[CAROUSEL]
 ________________________________________________________*/
+section.carousel {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: var(--gris);
+    color: var(--blanc);
+    height: 22.5em;
+    
+    & div.txt_carousel {
+        display: flex;
+        flex-flow: column;
+        width: 40%;
+
+        & h2 {
+            font-family: var(--raleway);
+            color: var(--cyan);
+            font-size: 2.5em;
+            font-weight: bolder;
+        }
+
+        & p {
+            width: 35%;
+        }
+
+        & a.btn {
+            @include bouton;
+        }
+
+    }
+
+    & div.gallerie_carousel {
+        display: flex;
+        flex-flow: row wrap;
+        width: 60%;
+
+        & div.num_carousel {
+            & span {
+                color: var(--magenta);
+            }
+
+            & a {
+                font-family: var(--marker);
+                color: var(--blanc);
+            }
+        }
+    }
+}
