@@ -25,14 +25,16 @@ section.ouverture {
     }
 
     & div.heures {
-        width: 20em;
+        width: 21em;
         background-color: var(--noir);
         color: var(--blanc);
         display: flex;
         flex-flow: column;
-        margin-top: 2.25em;
+        margin-top: 1em;
         font-size: 1.7em;
+
         & div {
+            margin: 0.5em;
             text-align: center;
             & span:last-of-type {
                 margin-left: 1em;

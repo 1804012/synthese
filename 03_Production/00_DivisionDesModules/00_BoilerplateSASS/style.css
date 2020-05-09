@@ -793,7 +793,7 @@ section.ouverture h2 {
 }
 
 section.ouverture div.heures {
-  width: 20em;
+  width: 21em;
   background-color: var(--noir);
   color: var(--blanc);
   display: -webkit-box;
@@ -803,11 +803,12 @@ section.ouverture div.heures {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  margin-top: 2.25em;
+  margin-top: 1em;
   font-size: 1.7em;
 }
 
 section.ouverture div.heures div {
+  margin: 0.5em;
   text-align: center;
 }
 
@@ -835,6 +836,12 @@ section.ouverture div.heures div:nth-of-type(4) {
 ________________________________________________________*/
 /*////[PROMOTION]
 ________________________________________________________*/
+section.promotion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 /*////[SUGGESTION]
 ________________________________________________________*/
 /*////[RESEAU]
