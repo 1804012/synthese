@@ -14,6 +14,7 @@ header {
         margin-top: auto;
         margin-bottom: 5em;
         margin-left: 5em;
+        width: 20%;
     }
 
     & div.logo {
@@ -21,8 +22,9 @@ header {
     }
 
     & p {
-        width: 25%;
+        width: 20%;
         margin: auto;
+        margin-right: 7em;
 
         &::before {
             display: inline-block;
