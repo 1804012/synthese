@@ -3,6 +3,8 @@ html {
     font-family: 'Exo', sans-serif;
     text-transform: uppercase;
     color: var(--noir);
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 a {

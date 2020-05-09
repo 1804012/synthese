@@ -387,6 +387,8 @@ html {
   font-family: 'Exo', sans-serif;
   text-transform: uppercase;
   color: var(--noir);
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 a {
@@ -670,6 +672,8 @@ section.carousel div.txt_carousel {
       -ms-flex-flow: column;
           flex-flow: column;
   width: 40%;
+  margin-top: 5em;
+  margin-left: 7em;
 }
 
 section.carousel div.txt_carousel h2 {
@@ -680,7 +684,9 @@ section.carousel div.txt_carousel h2 {
 }
 
 section.carousel div.txt_carousel p {
-  width: 35%;
+  width: 60%;
+  padding-left: 1em;
+  margin-top: 1em;
 }
 
 section.carousel div.txt_carousel a.btn {
@@ -692,6 +698,10 @@ section.carousel div.txt_carousel a.btn {
   padding-bottom: 0.5em;
   padding-left: 1em;
   padding-right: 1em;
+  width: 10em;
+  text-align: center;
+  margin-left: 1em;
+  margin-top: 1em;
 }
 
 section.carousel div.gallerie_carousel {
@@ -705,13 +715,39 @@ section.carousel div.gallerie_carousel {
   width: 60%;
 }
 
+section.carousel div.gallerie_carousel div.num_carousel {
+  margin-top: 2em;
+  margin-bottom: -2em;
+}
+
 section.carousel div.gallerie_carousel div.num_carousel span {
   color: var(--magenta);
+  margin-left: 0.25em;
+  font-size: 1.5em;
 }
 
 section.carousel div.gallerie_carousel div.num_carousel a {
   font-family: var(--marker);
+  font-size: 2em;
   color: var(--blanc);
+  margin-left: 0.25em;
+}
+
+section.carousel div.gallerie_carousel div.img_carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+section.carousel div.gallerie_carousel div.img_carousel img {
+  display: block;
+  width: 290px;
+  height: 290px;
+  margin: 0.5em;
 }
 
 /*////[COMMANDE]

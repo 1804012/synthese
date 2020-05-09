@@ -11,6 +11,8 @@ section.carousel {
         display: flex;
         flex-flow: column;
         width: 40%;
+        margin-top: 5em;
+        margin-left: 7em;
 
         & h2 {
             font-family: var(--raleway);
@@ -20,11 +22,15 @@ section.carousel {
         }
 
         & p {
-            width: 35%;
+            width: 60%;
+            padding-left: 1em;
+            margin-top: 1em;
         }
 
         & a.btn {
             @include bouton;
+            margin-left: 1em;
+            margin-top: 1em;
         }
 
     }
@@ -33,15 +39,33 @@ section.carousel {
         display: flex;
         flex-flow: row wrap;
         width: 60%;
-
+        
         & div.num_carousel {
+            margin-top: 2em;
+            margin-bottom: -2em;
             & span {
                 color: var(--magenta);
+                margin-left: 0.25em;
+                font-size: 1.5em;
             }
-
+            
             & a {
                 font-family: var(--marker);
+                font-size: 2em;
                 color: var(--blanc);
+                margin-left: 0.25em;
+            }
+        }
+        
+        & div.img_carousel {
+            display: flex;
+            flex-flow: row nowrap;
+
+            & img {
+                display: block;
+                width: 290px;
+                height: 290px;
+                margin: 0.5em;
             }
         }
     }
