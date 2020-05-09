@@ -1,5 +1,18 @@
 /*////[VARIABLES]
 ________________________________________________________*/
+:root {
+  /* VARIABLES DES COULEURS*/
+  --cyan: hsl(173, 100%, 50%);
+  --gris: hsl(0, 0%, 23%);
+  --noir: hsl(0, 0%, 0%);
+  --blanc: hsl(0, 0%, 100%);
+  --gris: hsl(343, 100%, 50%);
+  /* VARIABLES DES FONTS*/
+  --exo: 'Exo', sans-serif;
+  --raleway: 'Raleway', sans-serif;
+  --Marker: 'Permanent Marker', cursive;
+}
+
 /*////[MIXINS]
 ________________________________________________________*/
 /*////[RESET]
@@ -369,18 +382,153 @@ textarea {
   padding: 0.2em 0;
 }
 
+html {
+  font-size: 20px;
+  font-family: 'Exo', sans-serif;
+  text-transform: uppercase;
+  color: var(--noir);
+}
+
+a {
+  text-decoration: none;
+  color: var(--noir);
+}
+
 /*////[GRILLE DESKTOP]
 ________________________________________________________*/
+body {
+  display: -ms-grid;
+  display: grid;
+}
+
 /*////[HEADER]
 ________________________________________________________*/
 header {
-  background-image: url(../01_Images/glitch_background.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 100%;
-  height: 675px;
+  padding-top: 4em;
+  background-image: url(../01_Images/glitch_background.jpg);
+  background-size: cover;
+  color: var(--blanc);
+}
+
+header div.social {
+  margin-top: auto;
+  margin-bottom: 5em;
+  margin-left: 5em;
+}
+
+header div.logo {
+  width: 40%;
+}
+
+header p {
+  width: 25%;
+  margin: auto;
 }
 
 /*////[NAVIGATION]
 ________________________________________________________*/
+nav {
+  width: 100%;
+  height: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: url(../01_Images/glitch_background.jpg);
+  background-size: cover;
+  background-position: center;
+  color: var(--blanc);
+  position: fixed;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+nav ul.liens {
+  width: 40%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 2.5em;
+}
+
+nav ul.parametre {
+  width: 25%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 2.5em;
+}
+
+nav ul.parametre li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+nav ul.parametre li ul.langue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+}
+
+nav ul.parametre a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 30%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul a {
+  color: var(--blanc);
+}
+
+nav ul a:hover {
+  color: var(--cyan);
+}
+
 /*////[A PROPOS]
 ________________________________________________________*/
 /*////[CAROUSEL]
@@ -401,6 +549,37 @@ ________________________________________________________*/
 ________________________________________________________*/
 /*////[RESEAU]
 ________________________________________________________*/
+div.reseau {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  width: 25em;
+  margin: auto;
+}
+
+div.reseau div.plateforme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 65%;
+  margin-top: 0.5em;
+}
+
+div.reseau div.plateforme a {
+  color: var(--cyan);
+}
+
 /*////[FAQ]
 ________________________________________________________*/
 /*////[TITRE]

@@ -1,2 +1,20 @@
 /*////[RESEAU]
 ________________________________________________________*/
+div.reseau {
+    display: flex;
+    flex-flow: column;
+    width: 25em;
+    margin: auto;
+    
+    & div.plateforme {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        width: 65%;
+        margin-top: 0.5em;
+
+        & a {
+            color: var(--cyan);
+        }
+    }
+}
