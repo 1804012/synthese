@@ -17,4 +17,10 @@ div.reseau {
             color: var(--cyan);
         }
     }
+
+    & div.question {
+        & h2 {
+            @include titre;
+        }
+    }
 }

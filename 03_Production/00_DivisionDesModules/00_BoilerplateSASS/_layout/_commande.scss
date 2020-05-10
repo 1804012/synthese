@@ -11,6 +11,7 @@ section.commande {
         background-size: cover;
         border: 2px solid var(--gris);
         height: 100%;
+        padding-left: 8em;
 
         & h2 {
             @include titre;
@@ -55,6 +56,7 @@ section.commande {
         flex-flow: column;
         justify-content: center;
         margin-right: 2.5em;
+        padding-right: 13em;
 
         & h2 {
             @include titre;

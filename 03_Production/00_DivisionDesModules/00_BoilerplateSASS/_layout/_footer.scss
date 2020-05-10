@@ -1,2 +1,78 @@
 /*////[FOOTER]
 ________________________________________________________*/
+footer {
+    display: flex;
+    flex-flow: row nowrap;
+    background-image: url(../01_Images/glitch_background.jpg);
+    background-size: cover;
+    height: 26.25em;
+    color: var(--blanc);
+    padding-left: 9em;
+
+    & div.info {
+        display: flex;
+        flex-flow: column;
+
+        & img {
+            width: 6em;
+            margin: {
+                top: 2em;
+                left: 7em;
+            }            
+        }
+
+        & div {
+            margin-top: 1.5em;
+        }
+
+        & div.adresse, div.ville, div.tel, div.courriel{
+            margin-left: 7em;
+        }
+
+        & div.reseau {
+            margin-left: 7em;
+            margin-top: 3em;
+        }
+
+
+    }
+
+    & div.question {
+        display: flex;
+        flex-flow: column;
+        margin: {
+            top: 3em;
+            left: auto;
+            right: 23em;
+        }
+
+        & h2 {
+            @include titre;
+        }
+
+        & input.coordonees {
+            @include input;
+            margin-left: 1em;
+            margin-top: 1em;
+        }
+
+        & input.message {
+            @extend .coordonees;
+            height: 5em;
+
+            &::placeholder {
+                position: relative;
+                top: -1.5em;
+            }
+        }
+
+        & a.btn {
+            @include bouton;
+            margin: {
+                top: 1em;
+                left: 1em;
+            }
+            width: 6em;
+        }
+    }
+}

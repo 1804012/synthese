@@ -5,7 +5,7 @@ section.aPropos {
     flex-flow: row nowrap;
     height: 25.5em;
     padding-top: 3em;
-    padding-left: 7em;
+    padding-left: 16em;
     background-image: url(../01_Images/qr_small_background.jpg);
     background-size: cover;
     z-index: -1;
@@ -24,7 +24,7 @@ section.aPropos {
 
     & img {
         display: block;
-        margin-right: 14.5em;
+        margin-right: 23em;
         margin-top: 3em;
         height: 18.5em;
     }

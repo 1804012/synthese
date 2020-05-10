@@ -298,7 +298,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-input[type="search"] {
+input[type=search] {
   -webkit-appearance: textfield;
   /* 1 */
   -webkit-box-sizing: content-box;
@@ -535,13 +535,12 @@ header div.social {
 
 header div.logo {
   width: 40%;
-  margin-left: 5em;
 }
 
 header p {
   width: 20%;
   margin: auto;
-  margin-right: 7em;
+  margin-right: 15em;
 }
 
 header p::before {
@@ -661,7 +660,7 @@ section.aPropos {
           flex-flow: row nowrap;
   height: 25.5em;
   padding-top: 3em;
-  padding-left: 7em;
+  padding-left: 16em;
   background-image: url(../01_Images/qr_small_background.jpg);
   background-size: cover;
   z-index: -1;
@@ -682,7 +681,7 @@ section.aPropos div.txt_aPropos p {
 
 section.aPropos img {
   display: block;
-  margin-right: 14.5em;
+  margin-right: 23em;
   margin-top: 3em;
   height: 18.5em;
 }
@@ -712,7 +711,7 @@ section.carousel div.txt_carousel {
           flex-flow: column;
   width: 40%;
   margin-top: 5em;
-  margin-left: 7em;
+  margin-left: 15em;
 }
 
 section.carousel div.txt_carousel h2 {
@@ -809,6 +808,7 @@ section.commande div.comment {
   background-size: cover;
   border: 2px solid var(--gris);
   height: 100%;
+  padding-left: 8em;
 }
 
 section.commande div.comment h2 {
@@ -872,6 +872,7 @@ section.commande div.admissible {
       -ms-flex-pack: center;
           justify-content: center;
   margin-right: 2.5em;
+  padding-right: 13em;
 }
 
 section.commande div.admissible h2 {
@@ -943,6 +944,145 @@ section.commande div.admissible a.btn {
 
 /*////[FOOTER]
 ________________________________________________________*/
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  background-image: url(../01_Images/glitch_background.jpg);
+  background-size: cover;
+  height: 26.25em;
+  color: var(--blanc);
+  padding-left: 9em;
+}
+
+footer div.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+footer div.info img {
+  width: 6em;
+  margin-top: 2em;
+  margin-left: 7em;
+}
+
+footer div.info div {
+  margin-top: 1.5em;
+}
+
+footer div.info div.adresse, footer div.info div.ville, footer div.info div.tel, footer div.info div.courriel {
+  margin-left: 7em;
+}
+
+footer div.info div.reseau {
+  margin-left: 7em;
+  margin-top: 3em;
+}
+
+footer div.question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin-top: 3em;
+  margin-left: auto;
+  margin-right: 23em;
+}
+
+footer div.question h2 {
+  font-family: var(--raleway);
+  color: var(--cyan);
+  font-size: 2.5em;
+  font-weight: bolder;
+}
+
+footer div.question input.coordonees, footer div.question input.message {
+  background-color: var(--noir);
+  color: var(--blanc);
+  border: 1px solid var(--cyan);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  width: 20em;
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+footer div.question input.coordonees::-webkit-input-placeholder, footer div.question input.message::-webkit-input-placeholder {
+  color: var(--blanc);
+  font-family: var(--exo);
+  text-transform: uppercase;
+}
+
+footer div.question input.coordonees:-ms-input-placeholder, footer div.question input.message:-ms-input-placeholder {
+  color: var(--blanc);
+  font-family: var(--exo);
+  text-transform: uppercase;
+}
+
+footer div.question input.coordonees::-ms-input-placeholder, footer div.question input.message::-ms-input-placeholder {
+  color: var(--blanc);
+  font-family: var(--exo);
+  text-transform: uppercase;
+}
+
+footer div.question input.coordonees::placeholder, footer div.question input.message::placeholder {
+  color: var(--blanc);
+  font-family: var(--exo);
+  text-transform: uppercase;
+}
+
+footer div.question input.message {
+  height: 5em;
+}
+
+footer div.question input.message::-webkit-input-placeholder {
+  position: relative;
+  top: -1.5em;
+}
+
+footer div.question input.message:-ms-input-placeholder {
+  position: relative;
+  top: -1.5em;
+}
+
+footer div.question input.message::-ms-input-placeholder {
+  position: relative;
+  top: -1.5em;
+}
+
+footer div.question input.message::placeholder {
+  position: relative;
+  top: -1.5em;
+}
+
+footer div.question a.btn {
+  background-color: var(--noir);
+  color: var(--blanc);
+  border: 1px solid var(--magenta);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 10em;
+  text-align: center;
+  margin-top: 1em;
+  margin-left: 1em;
+  width: 6em;
+}
+
 /*////[ITEM LISTE]
 ________________________________________________________*/
 /*////[OUVERTURE]
@@ -977,6 +1117,7 @@ section.ouverture h2 {
   padding-left: 1em;
   padding-right: 1em;
   border: 3px solid var(--magenta);
+  margin-left: -2.75em;
 }
 
 section.ouverture div.heures {
@@ -991,6 +1132,7 @@ section.ouverture div.heures {
       -ms-flex-flow: column;
           flex-flow: column;
   margin-top: 1em;
+  margin-left: -3.75em;
   font-size: 1.7em;
 }
 
@@ -1078,7 +1220,7 @@ section.promotion div.txt_promotion a.btn {
 }
 
 section.promotion img {
-  margin-right: 15em;
+  margin-right: 23em;
 }
 
 /*////[SUGGESTION]
@@ -1114,6 +1256,13 @@ div.reseau div.plateforme {
 
 div.reseau div.plateforme a {
   color: var(--cyan);
+}
+
+div.reseau div.question h2 {
+  font-family: var(--raleway);
+  color: var(--cyan);
+  font-size: 2.5em;
+  font-weight: bolder;
 }
 
 /*////[FAQ]
