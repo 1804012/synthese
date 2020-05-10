@@ -16,6 +16,26 @@ ________________________________________________________*/
     text-align: center;
 }
 
+@mixin input {
+    background-color: var(--noir);
+    color: var(--blanc);
+    border: 1px solid var(--cyan);
+
+    padding: {
+        top: 0.5em;
+        bottom: 0.5em;
+        left: 1em;
+    }
+
+    width: 20em;
+
+    &::placeholder {
+        color: var(--blanc);
+        font-family: var(--exo);
+        text-transform: uppercase;
+    }
+}
+
 @mixin titre {
     font-family: var(--raleway);
     color: var(--cyan);

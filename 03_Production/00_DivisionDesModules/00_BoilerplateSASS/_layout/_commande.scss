@@ -1,2 +1,85 @@
 /*////[COMMANDE]
 ________________________________________________________*/
+section.commande {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 17em;
+
+    & div.comment {
+        background-image: url(../01_Images/glitch_white_background.jpg);
+        background-size: cover;
+        border: 2px solid var(--gris);
+        height: 100%;
+
+        & h2 {
+            @include titre;
+            color: var(--noir);
+            margin-left: 2.8em;
+            margin-top: 0.5em;
+            margin-bottom: 0.25em;
+        }
+
+        & div.instructions {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-around;
+            height: 70%;
+            margin-left: 8em;
+            
+            & div.etapes {
+                display: flex;
+                flex-flow: row nowrap;
+                
+                & img {
+                    width: 2.25em;
+                }
+                & p {
+                    width: 80%;
+                    margin-left: 1em;
+                }
+            }
+        }
+
+    }
+
+    & div.admissible {
+        background-color: var(--gris);
+        height: 100%;
+        border: {
+            top: 2px solid var(--gris);
+            bottom: 2px solid var(--gris);
+        }
+        color: var(--blanc);
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        margin-right: 2.5em;
+
+        & h2 {
+            @include titre;
+            font-size: 2em;
+            width: 10em;
+            margin-bottom: 0.25em;
+            margin-left: 1em;
+        }
+
+        & p {
+            width: 60%;
+            margin-left: 2em;
+        }
+
+        & input {
+            @include input;
+            margin-left: 2em;
+            margin-top: 0.5em;
+        }
+
+        & a.btn {
+            @include bouton;
+            width: 5em;
+            margin-top: 1em;
+            margin-left: 2em;
+        }
+    }
+}

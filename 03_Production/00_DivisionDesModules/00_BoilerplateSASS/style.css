@@ -753,6 +753,157 @@ section.carousel div.gallerie_carousel div.img_carousel img {
 
 /*////[COMMANDE]
 ________________________________________________________*/
+section.commande {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 17em;
+}
+
+section.commande div.comment {
+  background-image: url(../01_Images/glitch_white_background.jpg);
+  background-size: cover;
+  border: 2px solid var(--gris);
+  height: 100%;
+}
+
+section.commande div.comment h2 {
+  font-family: var(--raleway);
+  color: var(--cyan);
+  font-size: 2.5em;
+  font-weight: bolder;
+  color: var(--noir);
+  margin-left: 2.8em;
+  margin-top: 0.5em;
+  margin-bottom: 0.25em;
+}
+
+section.commande div.comment div.instructions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 70%;
+  margin-left: 8em;
+}
+
+section.commande div.comment div.instructions div.etapes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+section.commande div.comment div.instructions div.etapes img {
+  width: 2.25em;
+}
+
+section.commande div.comment div.instructions div.etapes p {
+  width: 80%;
+  margin-left: 1em;
+}
+
+section.commande div.admissible {
+  background-color: var(--gris);
+  height: 100%;
+  border-top: 2px solid var(--gris);
+  border-bottom: 2px solid var(--gris);
+  color: var(--blanc);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 2.5em;
+}
+
+section.commande div.admissible h2 {
+  font-family: var(--raleway);
+  color: var(--cyan);
+  font-size: 2.5em;
+  font-weight: bolder;
+  font-size: 2em;
+  width: 10em;
+  margin-bottom: 0.25em;
+  margin-left: 1em;
+}
+
+section.commande div.admissible p {
+  width: 60%;
+  margin-left: 2em;
+}
+
+section.commande div.admissible input {
+  background-color: var(--noir);
+  color: var(--blanc);
+  border: 1px solid var(--cyan);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  width: 20em;
+  margin-left: 2em;
+  margin-top: 0.5em;
+}
+
+section.commande div.admissible input::-webkit-input-placeholder {
+  color: var(--blanc);
+  font-family: var(--exo);
+  text-transform: uppercase;
+}
+
+section.commande div.admissible input:-ms-input-placeholder {
+  color: var(--blanc);
+  font-family: var(--exo);
+  text-transform: uppercase;
+}
+
+section.commande div.admissible input::-ms-input-placeholder {
+  color: var(--blanc);
+  font-family: var(--exo);
+  text-transform: uppercase;
+}
+
+section.commande div.admissible input::placeholder {
+  color: var(--blanc);
+  font-family: var(--exo);
+  text-transform: uppercase;
+}
+
+section.commande div.admissible a.btn {
+  background-color: var(--noir);
+  color: var(--blanc);
+  border: 1px solid var(--magenta);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 10em;
+  text-align: center;
+  width: 5em;
+  margin-top: 1em;
+  margin-left: 2em;
+}
+
 /*////[FOOTER]
 ________________________________________________________*/
 /*////[ITEM LISTE]
@@ -860,7 +1011,7 @@ section.promotion div.txt_promotion {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  margin-left: 18em;
+  margin-left: 15em;
 }
 
 section.promotion div.txt_promotion h2 {
@@ -931,6 +1082,8 @@ div.reseau div.plateforme a {
 /*////[FAQ]
 ________________________________________________________*/
 /*////[TITRE]
+________________________________________________________*/
+/*////[FIL D'ARIANE]
 ________________________________________________________*/
 /*////[LOGIN]
 ________________________________________________________*/
