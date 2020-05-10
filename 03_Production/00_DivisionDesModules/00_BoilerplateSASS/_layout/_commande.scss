@@ -55,25 +55,26 @@ section.commande {
         display: flex;
         flex-flow: column;
         justify-content: center;
-        margin-right: 2.5em;
-        padding-right: 13em;
+        padding-right: 15.5em;
 
         & h2 {
             @include titre;
             font-size: 2em;
             width: 10em;
             margin-bottom: 0.25em;
-            margin-left: 1em;
+            margin-left: 1.25em;
+            
+            
         }
 
         & p {
             width: 60%;
-            margin-left: 2em;
+            margin-left: 2.5em;
         }
 
         & input {
             @include input;
-            margin-left: 2em;
+            margin-left: 2.5em;
             margin-top: 0.5em;
         }
 
@@ -81,7 +82,7 @@ section.commande {
             @include bouton;
             width: 5em;
             margin-top: 1em;
-            margin-left: 2em;
+            margin-left: 2.5em;
         }
     }
 }
