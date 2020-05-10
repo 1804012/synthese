@@ -4,13 +4,21 @@ ________________________________________________________*/
     background-color: var(--noir);
     color: var(--blanc);
     border: 1px solid var(--magenta);
-    border-radius: 0.5em;
+
     padding: {
         top: 0.5em;
         bottom: 0.5em;
         left: 1em;
         right: 1em;
     }
+
     width: 10em;
     text-align: center;
+}
+
+@mixin titre {
+    font-family: var(--raleway);
+    color: var(--cyan);
+    font-size: 2.5em;
+    font-weight: bolder;
 }

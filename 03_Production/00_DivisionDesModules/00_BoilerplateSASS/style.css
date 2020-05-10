@@ -695,7 +695,6 @@ section.carousel div.txt_carousel a.btn {
   background-color: var(--noir);
   color: var(--blanc);
   border: 1px solid var(--magenta);
-  border-radius: 0.5em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   padding-left: 1em;
@@ -780,11 +779,11 @@ section.ouverture {
 }
 
 section.ouverture h2 {
-  background-color: var(--noir);
   font-family: var(--raleway);
   color: var(--cyan);
   font-size: 2.5em;
   font-weight: bolder;
+  background-color: var(--noir);
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   padding-left: 1em;
@@ -840,6 +839,58 @@ section.promotion {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 23.5em;
+}
+
+section.promotion div.txt_promotion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  margin-left: 18em;
+}
+
+section.promotion div.txt_promotion h2 {
+  font-family: var(--raleway);
+  color: var(--cyan);
+  font-size: 2.5em;
+  font-weight: bolder;
+}
+
+section.promotion div.txt_promotion p {
+  width: 75%;
+  margin-left: 1em;
+}
+
+section.promotion div.txt_promotion a.btn {
+  background-color: var(--noir);
+  color: var(--blanc);
+  border: 1px solid var(--magenta);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 10em;
+  text-align: center;
+  margin-left: 1em;
+  margin-top: 0.5em;
+}
+
+section.promotion img {
+  margin-right: 15em;
 }
 
 /*////[SUGGESTION]

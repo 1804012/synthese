@@ -3,4 +3,32 @@ ________________________________________________________*/
 
 section.promotion {
     display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 23.5em;
+    
+    & div.txt_promotion {
+        display: flex;
+        flex-flow: column nowrap;
+        margin-left: 18em;
+        & h2 {
+            @include titre;
+        }
+
+        & p {
+            width: 75%;
+            margin-left: 1em;
+        }
+
+        & a.btn {
+            @include bouton;
+            margin-left: 1em;
+            margin-top: 0.5em;
+        }
+    }
+
+    & img {
+        margin-right: 15em;
+    }
 }

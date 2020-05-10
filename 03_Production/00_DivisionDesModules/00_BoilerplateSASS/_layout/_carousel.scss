@@ -15,10 +15,7 @@ section.carousel {
         margin-left: 7em;
 
         & h2 {
-            font-family: var(--raleway);
-            color: var(--cyan);
-            font-size: 2.5em;
-            font-weight: bolder;
+            @include titre;
         }
 
         & p {

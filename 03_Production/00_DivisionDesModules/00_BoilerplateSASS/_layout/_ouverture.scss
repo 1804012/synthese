@@ -10,11 +10,8 @@ section.ouverture {
     align-items: center;
 
     & h2 {
+        @include titre;
         background-color: var(--noir);
-        font-family: var(--raleway);
-        color: var(--cyan);
-        font-size: 2.5em;
-        font-weight: bolder;
         padding: {
             top: 0.5em;
             bottom: 0.5em;
