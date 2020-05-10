@@ -1,2 +1,31 @@
 /*////[A PROPOS]
 ________________________________________________________*/
+section.aPropos {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 25.5em;
+    padding-top: 3em;
+    padding-left: 7em;
+    background-image: url(../01_Images/qr_small_background.jpg);
+    background-size: cover;
+    z-index: -1;
+
+    & div.txt_aPropos {
+        & h2 {
+            @include titre;
+            color: var(--noir);
+        }
+
+        & p{
+            margin-top: 1em;
+            width: 80%;
+        }
+    }
+
+    & img {
+        display: block;
+        margin-right: 14.5em;
+        margin-top: 3em;
+        height: 18.5em;
+    }
+}

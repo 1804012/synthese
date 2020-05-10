@@ -650,6 +650,42 @@ nav ul a:hover {
 
 /*////[A PROPOS]
 ________________________________________________________*/
+section.aPropos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  height: 25.5em;
+  padding-top: 3em;
+  padding-left: 7em;
+  background-image: url(../01_Images/qr_small_background.jpg);
+  background-size: cover;
+  z-index: -1;
+}
+
+section.aPropos div.txt_aPropos h2 {
+  font-family: var(--raleway);
+  color: var(--cyan);
+  font-size: 2.5em;
+  font-weight: bolder;
+  color: var(--noir);
+}
+
+section.aPropos div.txt_aPropos p {
+  margin-top: 1em;
+  width: 80%;
+}
+
+section.aPropos img {
+  display: block;
+  margin-right: 14.5em;
+  margin-top: 3em;
+  height: 18.5em;
+}
+
 /*////[CAROUSEL]
 ________________________________________________________*/
 section.carousel {
