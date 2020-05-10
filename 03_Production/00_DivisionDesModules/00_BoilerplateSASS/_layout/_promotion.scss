@@ -14,6 +14,7 @@ section.promotion {
         margin-left: 15em;
         & h2 {
             @include titre;
+            color: var(--noir);
         }
 
         & p {
