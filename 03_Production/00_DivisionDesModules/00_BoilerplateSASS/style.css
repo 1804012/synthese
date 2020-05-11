@@ -874,101 +874,6 @@ footer div.info div.reseau {
   margin-top: 3em;
 }
 
-footer div.question {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  margin-top: 3em;
-  margin-left: auto;
-  margin-right: 21em;
-}
-
-footer div.question h2 {
-  font-family: var(--raleway);
-  color: var(--cyan);
-  font-size: 2.5em;
-  font-weight: bolder;
-}
-
-footer div.question input.coordonees, footer div.question input.message {
-  background-color: var(--noir);
-  color: var(--blanc);
-  border: 1px solid var(--cyan);
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  padding-left: 1em;
-  width: 20em;
-  margin-left: 1em;
-  margin-top: 1em;
-}
-
-footer div.question input.coordonees::-webkit-input-placeholder, footer div.question input.message::-webkit-input-placeholder {
-  color: var(--blanc);
-  font-family: var(--exo);
-  text-transform: uppercase;
-}
-
-footer div.question input.coordonees:-ms-input-placeholder, footer div.question input.message:-ms-input-placeholder {
-  color: var(--blanc);
-  font-family: var(--exo);
-  text-transform: uppercase;
-}
-
-footer div.question input.coordonees::-ms-input-placeholder, footer div.question input.message::-ms-input-placeholder {
-  color: var(--blanc);
-  font-family: var(--exo);
-  text-transform: uppercase;
-}
-
-footer div.question input.coordonees::placeholder, footer div.question input.message::placeholder {
-  color: var(--blanc);
-  font-family: var(--exo);
-  text-transform: uppercase;
-}
-
-footer div.question input.message {
-  height: 5em;
-}
-
-footer div.question input.message::-webkit-input-placeholder {
-  position: relative;
-  top: -1.5em;
-}
-
-footer div.question input.message:-ms-input-placeholder {
-  position: relative;
-  top: -1.5em;
-}
-
-footer div.question input.message::-ms-input-placeholder {
-  position: relative;
-  top: -1.5em;
-}
-
-footer div.question input.message::placeholder {
-  position: relative;
-  top: -1.5em;
-}
-
-footer div.question a.btn {
-  background-color: var(--noir);
-  color: var(--blanc);
-  border: 1px solid var(--magenta);
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  width: 10em;
-  text-align: center;
-  margin-top: 1em;
-  margin-left: 1em;
-  width: 6em;
-}
-
 /*////[ITEM LISTE]
 ________________________________________________________*/
 section.listeProduits div.unProduit {
@@ -1203,6 +1108,101 @@ div.reseau div.question h2 {
 
 /*////[FAQ]
 ________________________________________________________*/
+div.question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin-top: 3em;
+  margin-left: auto;
+  margin-right: 21em;
+}
+
+div.question h2 {
+  font-family: var(--raleway);
+  color: var(--cyan);
+  font-size: 2.5em;
+  font-weight: bolder;
+}
+
+div.question input.coordonees, div.question input.message {
+  background-color: var(--noir);
+  color: var(--blanc);
+  border: 1px solid var(--cyan);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  width: 20em;
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+div.question input.coordonees::-webkit-input-placeholder, div.question input.message::-webkit-input-placeholder {
+  color: var(--blanc);
+  font-family: var(--exo);
+  text-transform: uppercase;
+}
+
+div.question input.coordonees:-ms-input-placeholder, div.question input.message:-ms-input-placeholder {
+  color: var(--blanc);
+  font-family: var(--exo);
+  text-transform: uppercase;
+}
+
+div.question input.coordonees::-ms-input-placeholder, div.question input.message::-ms-input-placeholder {
+  color: var(--blanc);
+  font-family: var(--exo);
+  text-transform: uppercase;
+}
+
+div.question input.coordonees::placeholder, div.question input.message::placeholder {
+  color: var(--blanc);
+  font-family: var(--exo);
+  text-transform: uppercase;
+}
+
+div.question input.message {
+  height: 5em;
+}
+
+div.question input.message::-webkit-input-placeholder {
+  position: relative;
+  top: -1.5em;
+}
+
+div.question input.message:-ms-input-placeholder {
+  position: relative;
+  top: -1.5em;
+}
+
+div.question input.message::-ms-input-placeholder {
+  position: relative;
+  top: -1.5em;
+}
+
+div.question input.message::placeholder {
+  position: relative;
+  top: -1.5em;
+}
+
+div.question a.btn {
+  background-color: var(--noir);
+  color: var(--blanc);
+  border: 1px solid var(--magenta);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 10em;
+  text-align: center;
+  margin-top: 1em;
+  margin-left: 1em;
+  width: 6em;
+}
+
 /*////[TITRE]
 ________________________________________________________*/
 div.titre {
@@ -1261,7 +1261,7 @@ div.ariane a {
   color: var(--blanc);
 }
 
-div.ariane span:first-of-type {
+div.ariane span {
   vertical-align: bottom;
 }
 

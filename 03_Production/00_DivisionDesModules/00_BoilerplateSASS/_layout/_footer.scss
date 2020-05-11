@@ -33,46 +33,5 @@ footer {
             margin-left: 7em;
             margin-top: 3em;
         }
-
-
-    }
-
-    & div.question {
-        display: flex;
-        flex-flow: column;
-        margin: {
-            top: 3em;
-            left: auto;
-            right: 21em;
-        }
-
-        & h2 {
-            @include titre;
-        }
-
-        & input.coordonees {
-            @include input;
-            margin-left: 1em;
-            margin-top: 1em;
-        }
-
-        & input.message {
-            @extend .coordonees;
-            height: 5em;
-
-            &::placeholder {
-                position: relative;
-                top: -1.5em;
-            }
-        }
-
-        & a.btn {
-            @include bouton;
-            margin: {
-                top: 1em;
-                left: 1em;
-            }
-            width: 6em;
-        }
     }
 }
