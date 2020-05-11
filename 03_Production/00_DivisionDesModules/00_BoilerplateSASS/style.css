@@ -1034,6 +1034,7 @@ section.produit div.infoProduit h2 {
   color: var(--noir);
   font-size: 1.5em;
   margin-left: 0.6em;
+  z-index: 0;
 }
 
 section.produit div.infoProduit h1 {
@@ -1159,6 +1160,80 @@ section.promotion img {
 
 /*////[SUGGESTION]
 ________________________________________________________*/
+section.suggestion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top: 1px solid var(--magenta);
+  background-image: url(../01_Images/glitch_white_background.jpg);
+  margin-top: 3em;
+}
+
+section.suggestion h2 {
+  font-family: var(--raleway);
+  color: var(--cyan);
+  font-size: 2.5em;
+  font-weight: bolder;
+  color: var(--noir);
+  font-size: 3em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.suggestion div.gallerie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-left: 12em;
+  padding-right: 12em;
+}
+
+section.suggestion div.gallerie div.connexte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.suggestion div.gallerie div.connexte img {
+  border: 1px solid var(--noir);
+}
+
+section.suggestion div.gallerie div.connexte a.btn {
+  background-color: var(--noir);
+  color: var(--blanc);
+  border: 1px solid var(--magenta);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 10em;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+
 /*////[RESEAU]
 ________________________________________________________*/
 div.reseau {
@@ -1350,7 +1425,7 @@ div.ariane {
   font-size: .75em;
   position: fixed;
   width: 100%;
-  z-index: 0;
+  z-index: 1;
 }
 
 div.ariane a {

@@ -1,5 +1,46 @@
 /*////[SUGGESTION]
 ________________________________________________________*/
 section.suggestion {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    border-top: 1px solid var(--magenta);
+    background-image: url(../01_Images/glitch_white_background.jpg);
+    margin-top: 3em;
+
+    & h2 {
+        @include titre;
+        color: var(--noir);
+        font-size: 3em;
+        margin: {
+            top: 1em;
+            bottom: 1em;
+            left: auto;
+            right: auto;
+        }
+    }
     
+    & div.gallerie {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        padding-left: 12em;
+        padding-right: 12em;
+
+        & div.connexte {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+
+            & img {
+                border: 1px solid var(--noir);
+            }
+
+            & a.btn {
+                @include bouton;
+                margin-top: 1em;
+                margin-bottom: 3em;
+            }
+        }
+    }
 }
