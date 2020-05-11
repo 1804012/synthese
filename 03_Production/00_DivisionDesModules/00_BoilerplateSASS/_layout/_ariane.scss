@@ -1,2 +1,26 @@
 /*////[FIL D'ARIANE]
 ________________________________________________________*/
+div.ariane {
+    margin-top: 5.1em;
+    padding: {
+        top: 0.5em;
+        right: 0.5em;
+        bottom: 0.5em;
+        left: 5.5em;
+    }
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    background-image: url(../01_Images/off-white_background.jpg);
+    background-size: cover;
+    color: var(--blanc);
+    font-size: .75em;
+
+    & a {
+        color: var(--blanc);
+    }
+
+    & span:first-of-type {
+        vertical-align: bottom;
+    }
+}

@@ -1153,6 +1153,36 @@ ________________________________________________________*/
 ________________________________________________________*/
 /*////[FIL D'ARIANE]
 ________________________________________________________*/
+div.ariane {
+  margin-top: 5.1em;
+  padding-top: 0.5em;
+  padding-right: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 5.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../01_Images/off-white_background.jpg);
+  background-size: cover;
+  color: var(--blanc);
+  font-size: .75em;
+}
+
+div.ariane a {
+  color: var(--blanc);
+}
+
+div.ariane span:first-of-type {
+  vertical-align: bottom;
+}
+
 /*////[LOGIN]
 ________________________________________________________*/
 /*# sourceMappingURL=style.css.map */
