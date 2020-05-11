@@ -277,6 +277,11 @@ a {
   color: var(--noir);
 }
 
+div.interface {
+  background-image: url(../01_Images/qr_large_background.jpg);
+  background-size: cover;
+}
+
 /*////[SLICK.JS]
 ________________________________________________________*/
 .slick-slider {
@@ -966,6 +971,12 @@ footer div.question a.btn {
 
 /*////[ITEM LISTE]
 ________________________________________________________*/
+section.listeProduits div.unProduit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 /*////[OUVERTURE]
 ________________________________________________________*/
 section.ouverture {
@@ -1151,6 +1162,34 @@ div.reseau div.question h2 {
 ________________________________________________________*/
 /*////[TITRE]
 ________________________________________________________*/
+div.titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+div.titre img {
+  width: 3em;
+}
+
+div.titre h1 {
+  font-family: var(--raleway);
+  color: var(--cyan);
+  font-size: 2.5em;
+  font-weight: bolder;
+  color: var(--noir);
+  margin: 0.5em;
+  font-size: 3.5em;
+}
+
 /*////[FIL D'ARIANE]
 ________________________________________________________*/
 div.ariane {

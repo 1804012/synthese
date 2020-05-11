@@ -1,2 +1,21 @@
 /*////[TITRE]
 ________________________________________________________*/
+div.titre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: {
+        top: 1em;
+        bottom: 1em;
+    }
+    & img {
+        width: 3em;
+    }
+
+    & h1 {
+        @include titre;
+        color: var(--noir);
+        margin: 0.5em;
+        font-size: 3.5em;
+    }
+}
