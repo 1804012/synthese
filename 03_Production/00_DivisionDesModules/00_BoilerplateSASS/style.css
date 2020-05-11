@@ -461,6 +461,7 @@ nav {
   background-position: center;
   color: var(--blanc);
   position: fixed;
+  z-index: 2;
 }
 
 nav ul {
@@ -1003,6 +1004,98 @@ section.ouverture div.heures div:nth-of-type(4) {
 
 /*////[PRODUIT]
 ________________________________________________________*/
+section.produit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 4em;
+}
+
+section.produit div.infoProduit {
+  width: 30%;
+  padding-left: 2em;
+  position: relative;
+  top: 15em;
+  left: 10em;
+}
+
+section.produit div.infoProduit h2 {
+  font-family: var(--raleway);
+  color: var(--cyan);
+  font-size: 2.5em;
+  font-weight: bolder;
+  color: var(--noir);
+  font-size: 1.5em;
+  margin-left: 0.6em;
+}
+
+section.produit div.infoProduit h1 {
+  font-family: var(--raleway);
+  color: var(--cyan);
+  font-size: 2.5em;
+  font-weight: bolder;
+  color: var(--noir);
+  font-size: 3em;
+}
+
+section.produit div.infoProduit p {
+  margin-left: 1.3em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+section.produit div.infoProduit span {
+  margin-left: 0.5em;
+  font-weight: bolder;
+  font-size: 2em;
+}
+
+section.produit div.infoProduit span::after {
+  display: block;
+  content: "";
+  width: 1em;
+  height: 2px;
+  background-color: var(--noir);
+  position: relative;
+  top: -0.55em;
+  left: 4em;
+}
+
+section.produit img {
+  height: 860px;
+}
+
+section.produit div.ajout {
+  width: 30%;
+  padding-top: 23em;
+}
+
+section.produit div.ajout a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.produit div.ajout a span:nth-of-type(2) {
+  font-size: 2em;
+  font-weight: bolder;
+  margin-bottom: 0.1em;
+}
+
 /*////[PROMOTION]
 ________________________________________________________*/
 section.promotion {
@@ -1255,6 +1348,9 @@ div.ariane {
   background-size: cover;
   color: var(--blanc);
   font-size: .75em;
+  position: fixed;
+  width: 100%;
+  z-index: 0;
 }
 
 div.ariane a {

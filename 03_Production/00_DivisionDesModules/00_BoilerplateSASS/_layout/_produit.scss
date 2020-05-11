@@ -1,2 +1,76 @@
 /*////[PRODUIT]
 ________________________________________________________*/
+
+section.produit {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding-top: 4em;
+
+
+    & div.infoProduit {
+        width: 30%;
+        padding-left: 2em;
+        position: relative;
+        top: 15em;
+        left: 10em;
+        
+        & h2 {
+            @include titre;
+            color: var(--noir);
+            font-size: 1.5em;
+            margin-left: 0.6em;
+        }
+        
+        & h1 {
+            @include titre;
+            color: var(--noir);
+            font-size: 3em;
+        }
+
+        & p {
+            margin-left: 1.3em;
+            margin-top: 2em;
+            margin-bottom: 2em;
+        }
+
+        & span {
+            margin-left: 0.5em;
+            font-weight: bolder;
+            font-size: 2em;
+
+            &::after {
+                display: block;
+                content: "";
+                width: 1em;
+                height: 2px;
+                background-color: var(--noir);
+                position: relative;
+                top: -0.55em;
+                left: 4em;
+            }
+        }
+
+    }
+
+    & img {
+        height: 860px;
+    }
+
+    & div.ajout {
+        width: 30%;
+        padding-top: 23em;
+
+        & a {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+
+            & span:nth-of-type(2) {
+                font-size: 2em;
+                font-weight: bolder;
+                margin-bottom: 0.1em;
+            }
+        }
+    }
+}
