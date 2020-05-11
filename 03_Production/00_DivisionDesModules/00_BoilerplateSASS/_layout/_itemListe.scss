@@ -1,2 +1,8 @@
 /*////[ITEM LISTE]
 ________________________________________________________*/
+section.listeProduits {
+    & div.unProduit {
+        display: flex;
+        
+    }
+}
