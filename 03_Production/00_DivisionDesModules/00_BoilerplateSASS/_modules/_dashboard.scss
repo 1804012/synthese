@@ -1,2 +1,110 @@
 /*////[DASHBOARD]
 ________________________________________________________*/
+.gridCell {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
+    background-color: var(--translucide);
+    border-radius: 0.5em;
+    margin: auto;
+
+    & h2 {
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+
+    & span {
+        margin: auto;
+        font-size: 6em;
+
+        &.numCommande {
+            font-family: var(--raleway);
+        }
+    }
+
+    & a {
+        margin: {
+            left: auto;
+            right: auto;
+            bottom: 1em;
+        }
+        font-size: 0.75em;
+    }
+
+    & a:hover {
+        color: var(--noir);
+    }
+}
+
+div.dashboard {
+    padding: 2em;
+    color: var(--blanc);
+    width: 70%;
+
+    & a {
+        color: var(--blanc);
+    }
+
+    & h1 {
+        color: var(--blanc);
+        font-family: var(--raleway);
+        font-weight: bolder;
+        font-size: 1.5em;
+        margin-bottom: 2em;
+    }
+
+    & div.accueilContenu {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 15em 15em;
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+
+        & div.nouvelleCommande {
+            @extend .gridCell;
+            grid-column: 1 / span 1;
+        }
+
+        & div.completeCommande {
+            @extend .gridCell;
+            grid-column: 2 / span 1;
+        }
+
+        & div.totalCommande {
+            @extend .gridCell;
+            grid-column: 3 / span 1;
+        }
+        
+        & div.infoProduits {
+            @extend .gridCell;
+            grid-column: 1 / span 3;
+            grid-row: 2 / span 1 ;
+
+            & div.interfaceLiens {
+                display: flex;
+            }
+
+            & a {
+                margin-top: 2.5em;
+                font-size: 1em;
+
+                & div.numProduit {
+                    display: flex;
+                    flex-flow: column;
+                    align-items: center;
+
+                    & span {
+                        &.numero {
+                            font-size: 5em;
+                        }
+                        &.txt {
+                            font-size: 0.75em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
