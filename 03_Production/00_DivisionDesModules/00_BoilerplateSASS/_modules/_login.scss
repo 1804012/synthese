@@ -40,8 +40,10 @@ div.login {
                     bottom: 1px solid var(--translucide);
                 }
 
+                color: var(--blanc);
+
                 &::placeholder {
-                    color: var(--noir);
+                    color: var(--blanc);
                 }
             }
 

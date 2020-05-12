@@ -1502,22 +1502,23 @@ div.login div.connexionAdmin div input {
   border-right: unset;
   border-top: unset;
   border-bottom: 1px solid var(--translucide);
+  color: var(--blanc);
 }
 
 div.login div.connexionAdmin div input::-webkit-input-placeholder {
-  color: var(--noir);
+  color: var(--blanc);
 }
 
 div.login div.connexionAdmin div input:-ms-input-placeholder {
-  color: var(--noir);
+  color: var(--blanc);
 }
 
 div.login div.connexionAdmin div input::-ms-input-placeholder {
-  color: var(--noir);
+  color: var(--blanc);
 }
 
 div.login div.connexionAdmin div input::placeholder {
-  color: var(--noir);
+  color: var(--blanc);
 }
 
 div.login div.connexionAdmin div:last-of-type {
