@@ -1453,6 +1453,84 @@ div.ariane span {
 
 /*////[LOGIN]
 ________________________________________________________*/
+div.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+div.login img {
+  width: 5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.login div.connexionAdmin {
+  margin: auto;
+}
+
+div.login div.connexionAdmin div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.login div.connexionAdmin div span {
+  color: var(--translucide);
+  font-size: 1.5em;
+  margin-right: 0.5em;
+}
+
+div.login div.connexionAdmin div input {
+  background-color: unset;
+  border-left: unset;
+  border-right: unset;
+  border-top: unset;
+  border-bottom: 1px solid var(--translucide);
+}
+
+div.login div.connexionAdmin div input::-webkit-input-placeholder {
+  color: var(--noir);
+}
+
+div.login div.connexionAdmin div input:-ms-input-placeholder {
+  color: var(--noir);
+}
+
+div.login div.connexionAdmin div input::-ms-input-placeholder {
+  color: var(--noir);
+}
+
+div.login div.connexionAdmin div input::placeholder {
+  color: var(--noir);
+}
+
+div.login div.connexionAdmin div:last-of-type {
+  margin-top: 0.5em;
+}
+
+div.login a {
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--gris);
+  font-size: 0.75em;
+}
+
 /*////[NAVIGATION SECTION ADMIN]
 ________________________________________________________*/
 aside {

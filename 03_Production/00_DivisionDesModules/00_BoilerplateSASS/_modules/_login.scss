@@ -1,2 +1,62 @@
 /*////[LOGIN]
 ________________________________________________________*/
+div.login {
+    display: flex;
+    flex-flow: column;
+    margin: {
+        left: auto;
+        right: auto;
+        top: 2em;
+        bottom: 2em;
+    }
+
+    & img {
+        width: 5em;
+        margin: {
+            left: auto;
+            right: auto;
+        }
+    }
+
+    & div.connexionAdmin {
+        margin: auto;
+        
+        & div {
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            & span {
+                color: var(--translucide);
+                font-size: 1.5em;
+                margin-right: 0.5em;
+            }
+
+            & input {
+                background-color: unset;
+                border: {
+                    left: unset;
+                    right: unset;
+                    top: unset;
+                    bottom: 1px solid var(--translucide);
+                }
+
+                &::placeholder {
+                    color: var(--noir);
+                }
+            }
+
+            &:last-of-type {
+                margin-top: 0.5em;
+            }
+        }
+    }
+
+    & a {
+        margin: {
+            left: auto;
+            right: auto;
+        }
+        color: var(--gris);
+        font-size: 0.75em;
+    }
+}
