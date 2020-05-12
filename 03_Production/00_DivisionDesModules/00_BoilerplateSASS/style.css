@@ -7,6 +7,7 @@ ________________________________________________________*/
   --noir: hsl(0, 0%, 0%);
   --blanc: hsl(0, 0%, 100%);
   --magenta: hsl(343, 100%, 50%);
+  --translucide: hsla(0, 0%, 100%, 0.25);
   /* VARIABLES DES FONTS*/
   --exo: 'Exo', sans-serif;
   --raleway: 'Raleway', sans-serif;
@@ -263,25 +264,6 @@ textarea {
   padding: 0.2em 0;
 }
 
-html {
-  font-size: 20px;
-  font-family: 'Exo', sans-serif;
-  text-transform: uppercase;
-  color: var(--noir);
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-a {
-  text-decoration: none;
-  color: var(--noir);
-}
-
-div.interface {
-  background-image: url(../01_Images/qr_large_background.jpg);
-  background-size: cover;
-}
-
 /*////[SLICK.JS]
 ________________________________________________________*/
 .slick-slider {
@@ -392,6 +374,39 @@ ________________________________________________________*/
 body {
   display: -ms-grid;
   display: grid;
+}
+
+html {
+  font-size: 20px;
+  font-family: 'Exo', sans-serif;
+  text-transform: uppercase;
+  color: var(--noir);
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--noir);
+}
+
+div.interface {
+  background-image: url(../01_Images/qr_large_background.jpg);
+  background-size: cover;
+}
+
+div.interfaceAdmin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../01_Images/00_admin/accueil_admin.jpg);
+  background-size: cover;
 }
 
 /*////[HEADER]
@@ -1440,6 +1455,48 @@ div.ariane span {
 ________________________________________________________*/
 /*////[NAVIGATION SECTION ADMIN]
 ________________________________________________________*/
+aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  padding-left: 3em;
+  padding-right: 6em;
+  background-color: var(--translucide);
+}
+
+aside img {
+  width: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5em;
+  margin-top: 2em;
+}
+
+aside a {
+  color: var(--blanc);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1em;
+  font-size: 1em;
+}
+
+aside a:hover {
+  color: var(--noir);
+}
+
+aside a span.material-icons {
+  font-size: 2.5em;
+  margin-right: 0.25em;
+}
+
 /*////[DASHBOARD]
 ________________________________________________________*/
 /*////[INFORMATION COMMANDE]
@@ -1462,6 +1519,10 @@ ________________________________________________________*/
 ________________________________________________________*/
 /*////[BOUTON MODIFIER & AJOUTER]
 ________________________________________________________*/
+div.popup {
+  display: none;
+}
+
 div.popup div.popup-inner div.popup-photo img {
   height: 700px;
 }

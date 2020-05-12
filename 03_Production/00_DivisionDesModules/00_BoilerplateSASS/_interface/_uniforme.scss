@@ -17,3 +17,12 @@ div.interface {
     background-size: cover;
 }
 
+div.interfaceAdmin {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../01_Images/00_admin/accueil_admin.jpg);
+    background-size: cover;
+}
+
