@@ -1,0 +1,9 @@
+div.popup {
+    & div.popup-inner {
+        & div.popup-photo {
+            & img {
+                height: 700px;
+            }
+        }
+    }
+}
