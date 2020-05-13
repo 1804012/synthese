@@ -1,2 +1,28 @@
 /*////[BARRE DE RECHERCHE]
 ________________________________________________________*/
+div.recherche {
+    margin-left: auto;
+
+    & input {
+        background-color: unset;
+        border: {
+            left: unset;
+            right: unset;
+            top: unset;
+            bottom: 1px solid var(--translucide);
+        }
+        font-family: var(--raleway);
+        text-transform: uppercase;
+
+        color: var(--blanc);
+
+        &::placeholder {
+            color: var(--blanc);
+        }
+    }
+
+    & span {
+        vertical-align: middle;
+        color: var(--translucide);
+    }
+}

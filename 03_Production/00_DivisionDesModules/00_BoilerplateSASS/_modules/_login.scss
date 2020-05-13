@@ -33,6 +33,8 @@ div.login {
 
             & input {
                 background-color: unset;
+                font-family: var(--raleway);
+                text-transform: uppercase;
                 border: {
                     left: unset;
                     right: unset;

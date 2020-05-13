@@ -1,2 +1,13 @@
 /*////[TITRE SECTION ADMIN]
 ________________________________________________________*/
+div.titreAdmin {
+    display: flex;
+    width: 100%;
+    & h1 {
+        color: var(--blanc);
+        font-family: var(--raleway);
+        font-weight: bolder;
+        font-size: 1.5em;
+        margin-bottom: 2em;
+    }
+}

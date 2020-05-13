@@ -1498,6 +1498,8 @@ div.login div.connexionAdmin div span {
 
 div.login div.connexionAdmin div input {
   background-color: unset;
+  font-family: var(--raleway);
+  text-transform: uppercase;
   border-left: unset;
   border-right: unset;
   border-top: unset;
@@ -1713,10 +1715,73 @@ ________________________________________________________*/
 ________________________________________________________*/
 /*////[TITRE SECTION ADMIN]
 ________________________________________________________*/
+div.titreAdmin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+div.titreAdmin h1 {
+  color: var(--blanc);
+  font-family: var(--raleway);
+  font-weight: bolder;
+  font-size: 1.5em;
+  margin-bottom: 2em;
+}
+
 /*////[BARRE DE RECHERCHE]
 ________________________________________________________*/
+div.recherche {
+  margin-left: auto;
+}
+
+div.recherche input {
+  background-color: unset;
+  border-left: unset;
+  border-right: unset;
+  border-top: unset;
+  border-bottom: 1px solid var(--translucide);
+  font-family: var(--raleway);
+  text-transform: uppercase;
+  color: var(--blanc);
+}
+
+div.recherche input::-webkit-input-placeholder {
+  color: var(--blanc);
+}
+
+div.recherche input:-ms-input-placeholder {
+  color: var(--blanc);
+}
+
+div.recherche input::-ms-input-placeholder {
+  color: var(--blanc);
+}
+
+div.recherche input::placeholder {
+  color: var(--blanc);
+}
+
+div.recherche span {
+  vertical-align: middle;
+  color: var(--translucide);
+}
+
 /*////[INVENTAIRE DES PRODUITS]
 ________________________________________________________*/
+div.interfaceInventaire {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  padding: 2em;
+  width: 70%;
+}
+
 /*////[NOM ADMIN]
 ________________________________________________________*/
 /*////[PRIX ADMIN]
@@ -1727,11 +1792,77 @@ ________________________________________________________*/
 ________________________________________________________*/
 /*////[BOUTON MODIFIER & AJOUTER]
 ________________________________________________________*/
-div.popup {
-  display: none;
+div.interfacePopup {
+  width: 50em;
+  display: block;
+  background-color: var(--blanc);
+  position: fixed;
+  top: 20%;
+  left: 25%;
 }
 
-div.popup div.popup-inner div.popup-photo img {
-  height: 700px;
+div.interfacePopup div.popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.interfacePopup img {
+  height: 600px;
+}
+
+div.interfacePopup div.popupText {
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+div.interfacePopup div.popupText h1 {
+  font-family: var(--raleway);
+  color: var(--cyan);
+  font-size: 2.5em;
+  font-weight: bolder;
+  color: var(--noir);
+}
+
+div.interfacePopup div.popupText p {
+  width: 80%;
+  margin-top: 2em;
+}
+
+div.interfacePopup div.popupText a.btn {
+  background-color: var(--noir);
+  color: var(--blanc);
+  border: 1px solid var(--magenta);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 10em;
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+div.interfacePopup a.popupClose {
+  position: relative;
+  top: -1.25em;
+  right: -1.25em;
+}
+
+div.interfacePopup a.popupClose span {
+  font-size: 2.5em;
+  color: var(--blanc);
+  background-color: var(--noir);
+  border-radius: 50%;
+  padding: 0.1em;
+}
+
+.close {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

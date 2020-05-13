@@ -1,2 +1,8 @@
 /*////[INVENTAIRE DES PRODUITS]
 ________________________________________________________*/
+div.interfaceInventaire {
+    display: flex;
+    flex-flow: column;
+    padding: 2em;
+    width: 70%;
+}
