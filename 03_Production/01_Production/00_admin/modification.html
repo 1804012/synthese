@@ -20,38 +20,44 @@
                 <span class="material-icons">dashboard</span>
                 <span>tableau de bord</span>
             </a>
-            <a href="accueilAdmin.html">
+            <a href="inventaire.html">
                 <span class="material-icons">view_list</span>
                 <span>produits</span>
             </a>
-            <a href="accueilAdmin.html">
+            <a href="ajout.html">
                 <span class="material-icons">add</span>
                 <span>ajouter un produit</span>
             </a>
         </aside>
-        <div class="modificationContenu">
-            <h1>produits</h1>
-            <div class="nom">
-                <h2>nom</h2>
-                <input type="text" name="marque" id="marque" placeholder="marque">
-                <input type="text" name="modele" id="modele" placeholder="modèle">
-                <input type="text" name="sortie" id="sortie" placeholder="sortie">
+        <div class="interfaceModification">
+            <div class="titreAdmin">
+                <h1>produits</h1>
             </div>
-            <div class="prix">
-                <h2>prix</h2>
-                <input type="text" name="prix" id="prix" placeholder="prix">
+            <div class="modificationContenu">
+                <div class="nom">
+                    <h2>nom</h2>
+                    <input type="text" name="marque" id="marque" placeholder="marque">
+                    <input type="text" name="modele" id="modele" placeholder="modèle">
+                    <input type="text" name="sortie" id="sortie" placeholder="sortie">
+                </div>
+                <div class="prix">
+                    <h2>prix</h2>
+                    <input type="text" name="prix" id="prix" placeholder="prix">
+                </div>
+                <div class="image">
+                    <h2>image</h2>
+                    <img src="../../00_DivisionDesModules/01_Images/newbalance_encap_680x453.jpg" alt="image du produit">
+                    <input type="button" value="choisir une image">
+                </div>
+                <div class="description">
+                    <h2>description</h2>
+                    <textarea name="description" id="description" cols="40" rows="10"></textarea>
+                </div>
             </div>
-            <div class="image">
-                <h2>image</h2>
-                <img src="../../00_DivisionDesModules/01_Images/newbalance_encap_618x1060.jpg" alt="image du produit">
-                <input type="button" value="choisir une image">
+            <div class="boutonModif">
+                <input type="button" value="modifier">
             </div>
-            <div class="description">
-                <h2>description</h2>
-                <textarea name="description" id="description" cols="30" rows="10"></textarea>
-            </div>
-            <input type="button" value="modifier">
         </div>
-    </div>   
+    </div>    
 </body>
 </html>

@@ -52,7 +52,24 @@ div.login {
             &:last-of-type {
                 margin-top: 0.5em;
             }
+
         }
+                & div.boutonConnexion {
+                    & input {
+                        margin: {
+                            left: auto;
+                            right: auto;
+                        }
+                        color: var(--gris);
+                        font-size: 0.75em;
+                        border: none;
+
+                        &:hover {
+                            color: var(--noir);
+                        }
+
+                    }
+                }
     }
 
     & a {
@@ -62,5 +79,9 @@ div.login {
         }
         color: var(--gris);
         font-size: 0.75em;
+
+        &:hover {
+            color: var(--noir);
+        }
     }
 }

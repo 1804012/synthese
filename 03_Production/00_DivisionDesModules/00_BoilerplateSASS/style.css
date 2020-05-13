@@ -1525,11 +1525,27 @@ div.login div.connexionAdmin div:last-of-type {
   margin-top: 0.5em;
 }
 
+div.login div.connexionAdmin div.boutonConnexion input {
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--gris);
+  font-size: 0.75em;
+  border: none;
+}
+
+div.login div.connexionAdmin div.boutonConnexion input:hover {
+  color: var(--noir);
+}
+
 div.login a {
   margin-left: auto;
   margin-right: auto;
   color: var(--gris);
   font-size: 0.75em;
+}
+
+div.login a:hover {
+  color: var(--noir);
 }
 
 /*////[NAVIGATION SECTION ADMIN]
@@ -1578,7 +1594,7 @@ aside a span.material-icons {
 
 /*////[GRIDCELL]
 ________________________________________________________*/
-.gridCell, div.nouvelleCommande, div.completeCommande, div.totalCommande, div.infoProduits {
+.gridCell, div.nouvelleCommande, div.completeCommande, div.totalCommande, div.infoProduits, div.interfaceModification div.modificationContenu div.nom, div.interfaceModification div.modificationContenu div.prix, div.interfaceModification div.modificationContenu div.image, div.interfaceModification div.modificationContenu div.description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1593,28 +1609,28 @@ ________________________________________________________*/
   margin: auto;
 }
 
-.gridCell h2, div.nouvelleCommande h2, div.completeCommande h2, div.totalCommande h2, div.infoProduits h2 {
+.gridCell h2, div.nouvelleCommande h2, div.completeCommande h2, div.totalCommande h2, div.infoProduits h2, div.interfaceModification div.modificationContenu div.nom h2, div.interfaceModification div.modificationContenu div.prix h2, div.interfaceModification div.modificationContenu div.image h2, div.interfaceModification div.modificationContenu div.description h2 {
   margin-left: 1em;
   margin-top: 1em;
 }
 
-.gridCell span, div.nouvelleCommande span, div.completeCommande span, div.totalCommande span, div.infoProduits span {
+.gridCell span, div.nouvelleCommande span, div.completeCommande span, div.totalCommande span, div.infoProduits span, div.interfaceModification div.modificationContenu div.nom span, div.interfaceModification div.modificationContenu div.prix span, div.interfaceModification div.modificationContenu div.image span, div.interfaceModification div.modificationContenu div.description span {
   margin: auto;
   font-size: 6em;
 }
 
-.gridCell span.numCommande, div.nouvelleCommande span.numCommande, div.completeCommande span.numCommande, div.totalCommande span.numCommande, div.infoProduits span.numCommande {
+.gridCell span.numCommande, div.nouvelleCommande span.numCommande, div.completeCommande span.numCommande, div.totalCommande span.numCommande, div.infoProduits span.numCommande, div.interfaceModification div.modificationContenu div.nom span.numCommande, div.interfaceModification div.modificationContenu div.prix span.numCommande, div.interfaceModification div.modificationContenu div.image span.numCommande, div.interfaceModification div.modificationContenu div.description span.numCommande {
   font-family: var(--raleway);
 }
 
-.gridCell a, div.nouvelleCommande a, div.completeCommande a, div.totalCommande a, div.infoProduits a {
+.gridCell a, div.nouvelleCommande a, div.completeCommande a, div.totalCommande a, div.infoProduits a, div.interfaceModification div.modificationContenu div.nom a, div.interfaceModification div.modificationContenu div.prix a, div.interfaceModification div.modificationContenu div.image a, div.interfaceModification div.modificationContenu div.description a {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1em;
   font-size: 0.75em;
 }
 
-.gridCell a:hover, div.nouvelleCommande a:hover, div.completeCommande a:hover, div.totalCommande a:hover, div.infoProduits a:hover {
+.gridCell a:hover, div.nouvelleCommande a:hover, div.completeCommande a:hover, div.totalCommande a:hover, div.infoProduits a:hover, div.interfaceModification div.modificationContenu div.nom a:hover, div.interfaceModification div.modificationContenu div.prix a:hover, div.interfaceModification div.modificationContenu div.image a:hover, div.interfaceModification div.modificationContenu div.description a:hover {
   color: var(--noir);
 }
 
@@ -1863,6 +1879,164 @@ div.interfaceInventaire div.inventaireContenu div.inventaire div.gestionProduit 
   font-size: 3em;
   margin-left: auto;
   margin-right: auto;
+}
+
+/*////[INTERFACE MODIFICATION & AJOUT]
+________________________________________________________*/
+div.interfaceModification {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  padding: 2em;
+  color: var(--blanc);
+  width: 70%;
+}
+
+div.interfaceModification div.modificationContenu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (33%)[3];
+      grid-template-columns: repeat(3, 33%);
+  -ms-grid-rows: (10em)[3];
+      grid-template-rows: repeat(3, 10em);
+  grid-row-gap: 1em;
+  grid-column-gap: 1em;
+  margin-top: -1em;
+}
+
+div.interfaceModification div.modificationContenu div.nom {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / span 1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / span 1;
+}
+
+div.interfaceModification div.modificationContenu div.nom input {
+  margin: 1.25em;
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
+  font-family: var(--raleway);
+  border: none;
+  border-bottom: 1px solid var(--translucide);
+  background-color: unset;
+  color: var(--blanc);
+  font-size: .85em;
+}
+
+div.interfaceModification div.modificationContenu div.nom input::-webkit-input-placeholder {
+  color: var(--blanc);
+}
+
+div.interfaceModification div.modificationContenu div.nom input:-ms-input-placeholder {
+  color: var(--blanc);
+}
+
+div.interfaceModification div.modificationContenu div.nom input::-ms-input-placeholder {
+  color: var(--blanc);
+}
+
+div.interfaceModification div.modificationContenu div.nom input::placeholder {
+  color: var(--blanc);
+}
+
+div.interfaceModification div.modificationContenu div.prix {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / span 1;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / span 1;
+}
+
+div.interfaceModification div.modificationContenu div.prix input {
+  margin: 1.25em;
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
+  font-family: var(--raleway);
+  border: none;
+  border-bottom: 1px solid var(--translucide);
+  background-color: unset;
+  color: var(--blanc);
+  font-size: .85em;
+}
+
+div.interfaceModification div.modificationContenu div.prix input::-webkit-input-placeholder {
+  color: var(--blanc);
+}
+
+div.interfaceModification div.modificationContenu div.prix input:-ms-input-placeholder {
+  color: var(--blanc);
+}
+
+div.interfaceModification div.modificationContenu div.prix input::-ms-input-placeholder {
+  color: var(--blanc);
+}
+
+div.interfaceModification div.modificationContenu div.prix input::placeholder {
+  color: var(--blanc);
+}
+
+div.interfaceModification div.modificationContenu div.image {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / span 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / span 2;
+}
+
+div.interfaceModification div.modificationContenu div.image img {
+  margin: auto;
+  height: 330px;
+  border: 1px solid var(--blanc);
+}
+
+div.interfaceModification div.modificationContenu div.image input {
+  width: 20%;
+  margin: auto;
+  font-family: var(--raleway);
+  border: none;
+  border-bottom: 1px solid var(--translucide);
+  background-color: unset;
+  color: var(--blanc);
+}
+
+div.interfaceModification div.modificationContenu div.image input:hover {
+  color: var(--noir);
+}
+
+div.interfaceModification div.modificationContenu div.description {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / span 3;
+  grid-row-gap: 3 / span 1;
+}
+
+div.interfaceModification div.modificationContenu div.description textarea {
+  background-color: var(--translucide);
+  border: 1px solid var(--blanc);
+  margin: 1em;
+  color: var(--blanc);
+}
+
+div.interfaceModification div.boutonModif input {
+  background-color: unset;
+  border: none;
+  border-bottom: 1px solid var(--translucide);
+  color: var(--blanc);
+  text-transform: uppercase;
+  margin: 1em;
+  margin-top: 2em;
+}
+
+div.interfaceModification div.boutonModif input:hover {
+  color: var(--noir);
 }
 
 /*////[NOM ADMIN]

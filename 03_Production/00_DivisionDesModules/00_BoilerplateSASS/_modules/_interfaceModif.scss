@@ -1,0 +1,119 @@
+/*////[INTERFACE MODIFICATION & AJOUT]
+________________________________________________________*/
+div.interfaceModification {
+    display: flex;
+    flex-flow: column;
+    padding: 2em;
+    color: var(--blanc);
+    width: 70%;
+
+    & div.modificationContenu {
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: repeat(3, 10em);
+        grid-row-gap: 1em;
+        grid-column-gap: 1em;
+        margin-top: -1em;
+
+        & div.nom {
+            @extend .gridCell;
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 1;
+
+            & input {
+                margin: 1.25em;
+                margin-top: 0.7em;
+                margin-bottom: 0.7em;
+                font-family: var(--raleway);
+                border: none;
+                border-bottom: 1px solid var(--translucide);
+                background-color: unset;
+                color: var(--blanc);
+                font-size: .85em;
+
+                &::placeholder {
+                    color: var(--blanc);
+                }
+            }
+        }
+
+        & div.prix {
+            @extend .gridCell;
+            grid-column: 1 / span 1;
+            grid-row: 2 / span 1;
+
+            & input {
+                margin: 1.25em;
+                margin-top: 0.7em;
+                margin-bottom: 0.7em;
+                font-family: var(--raleway);
+                border: none;
+                border-bottom: 1px solid var(--translucide);
+                background-color: unset;
+                color: var(--blanc);
+                font-size: .85em;
+
+                &::placeholder {
+                    color: var(--blanc);
+                }
+            }
+        }
+
+        & div.image {
+            @extend .gridCell;
+            grid-column: 2 / span 2;
+            grid-row: 1 / span 2;
+
+            & img {
+                margin: auto;
+                height: 330px;
+                border: 1px solid var(--blanc);
+            }
+
+            & input {
+                width: 20%;
+                margin: auto;
+                font-family: var(--raleway);
+                border: none;
+                border-bottom: 1px solid var(--translucide);
+                background-color: unset;
+                color: var(--blanc);
+
+                &:hover {
+                    color: var(--noir);
+                }
+            }
+        }
+
+        & div.description {
+            @extend .gridCell;
+            grid-column: 1 / span 3;
+            grid-row-gap: 3 / span 1;
+
+            & textarea {
+                background-color: var(--translucide);
+                border: 1px solid var(--blanc);
+                margin: 1em;
+                color: var(--blanc);
+            }
+        }
+
+    }
+
+    & div.boutonModif {
+        & input {
+            background-color: unset;
+            border: none;
+            border-bottom: 1px solid var(--translucide);
+            color: var(--blanc);
+            text-transform: uppercase;
+            margin: 1em;
+            margin-top: 2em;
+
+            &:hover {
+                color: var(--noir);
+            }
+            
+        }
+    }
+}
