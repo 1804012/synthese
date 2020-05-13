@@ -1,2 +1,16 @@
 /*////[INFORMATION COMMANDE]
 ________________________________________________________*/
+div.nouvelleCommande {
+    @extend .gridCell;
+    grid-column: 1 / span 1;
+}
+
+div.completeCommande {
+    @extend .gridCell;
+    grid-column: 2 / span 1;
+}
+
+div.totalCommande {
+    @extend .gridCell;
+    grid-column: 3 / span 1;
+}

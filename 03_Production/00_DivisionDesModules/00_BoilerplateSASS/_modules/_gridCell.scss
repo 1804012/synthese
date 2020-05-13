@@ -1,0 +1,38 @@
+/*////[GRIDCELL]
+________________________________________________________*/
+.gridCell {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
+    background-color: var(--translucide);
+    border-radius: 0.5em;
+    margin: auto;
+
+    & h2 {
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+
+    & span {
+        margin: auto;
+        font-size: 6em;
+
+        &.numCommande {
+            font-family: var(--raleway);
+        }
+    }
+
+    & a {
+        margin: {
+            left: auto;
+            right: auto;
+            bottom: 1em;
+        }
+        font-size: 0.75em;
+    }
+
+    & a:hover {
+        color: var(--noir);
+    }
+}

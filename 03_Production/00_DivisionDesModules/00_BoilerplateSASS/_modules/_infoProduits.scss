@@ -1,2 +1,31 @@
 /*////[INFORMATION PRODUIT]
 ________________________________________________________*/
+div.infoProduits {
+    @extend .gridCell;
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 1 ;
+
+    & div.interfaceLiens {
+        display: flex;
+    }
+
+    & a {
+        margin-top: 2.5em;
+        font-size: 1em;
+
+        & div.numProduit {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+
+            & span {
+                &.numero {
+                    font-size: 5em;
+                }
+                &.txt {
+                    font-size: 0.75em;
+                }
+            }
+        }
+    }
+}

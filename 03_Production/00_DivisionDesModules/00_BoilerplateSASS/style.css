@@ -1576,9 +1576,9 @@ aside a span.material-icons {
   margin-right: 0.25em;
 }
 
-/*////[DASHBOARD]
+/*////[GRIDCELL]
 ________________________________________________________*/
-.gridCell, div.dashboard div.accueilContenu div.nouvelleCommande, div.dashboard div.accueilContenu div.completeCommande, div.dashboard div.accueilContenu div.totalCommande, div.dashboard div.accueilContenu div.infoProduits {
+.gridCell, div.nouvelleCommande, div.completeCommande, div.totalCommande, div.infoProduits {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1593,31 +1593,33 @@ ________________________________________________________*/
   margin: auto;
 }
 
-.gridCell h2, div.dashboard div.accueilContenu div.nouvelleCommande h2, div.dashboard div.accueilContenu div.completeCommande h2, div.dashboard div.accueilContenu div.totalCommande h2, div.dashboard div.accueilContenu div.infoProduits h2 {
+.gridCell h2, div.nouvelleCommande h2, div.completeCommande h2, div.totalCommande h2, div.infoProduits h2 {
   margin-left: 1em;
   margin-top: 1em;
 }
 
-.gridCell span, div.dashboard div.accueilContenu div.nouvelleCommande span, div.dashboard div.accueilContenu div.completeCommande span, div.dashboard div.accueilContenu div.totalCommande span, div.dashboard div.accueilContenu div.infoProduits span {
+.gridCell span, div.nouvelleCommande span, div.completeCommande span, div.totalCommande span, div.infoProduits span {
   margin: auto;
   font-size: 6em;
 }
 
-.gridCell span.numCommande, div.dashboard div.accueilContenu div.nouvelleCommande span.numCommande, div.dashboard div.accueilContenu div.completeCommande span.numCommande, div.dashboard div.accueilContenu div.totalCommande span.numCommande, div.dashboard div.accueilContenu div.infoProduits span.numCommande {
+.gridCell span.numCommande, div.nouvelleCommande span.numCommande, div.completeCommande span.numCommande, div.totalCommande span.numCommande, div.infoProduits span.numCommande {
   font-family: var(--raleway);
 }
 
-.gridCell a, div.dashboard div.accueilContenu div.nouvelleCommande a, div.dashboard div.accueilContenu div.completeCommande a, div.dashboard div.accueilContenu div.totalCommande a, div.dashboard div.accueilContenu div.infoProduits a {
+.gridCell a, div.nouvelleCommande a, div.completeCommande a, div.totalCommande a, div.infoProduits a {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1em;
   font-size: 0.75em;
 }
 
-.gridCell a:hover, div.dashboard div.accueilContenu div.nouvelleCommande a:hover, div.dashboard div.accueilContenu div.completeCommande a:hover, div.dashboard div.accueilContenu div.totalCommande a:hover, div.dashboard div.accueilContenu div.infoProduits a:hover {
+.gridCell a:hover, div.nouvelleCommande a:hover, div.completeCommande a:hover, div.totalCommande a:hover, div.infoProduits a:hover {
   color: var(--noir);
 }
 
+/*////[DASHBOARD]
+________________________________________________________*/
 div.dashboard {
   padding: 2em;
   color: var(--blanc);
@@ -1648,25 +1650,29 @@ div.dashboard div.accueilContenu {
   grid-row-gap: 1em;
 }
 
-div.dashboard div.accueilContenu div.nouvelleCommande {
+/*////[INFORMATION COMMANDE]
+________________________________________________________*/
+div.nouvelleCommande {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / span 1;
 }
 
-div.dashboard div.accueilContenu div.completeCommande {
+div.completeCommande {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / span 1;
 }
 
-div.dashboard div.accueilContenu div.totalCommande {
+div.totalCommande {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3 / span 1;
 }
 
-div.dashboard div.accueilContenu div.infoProduits {
+/*////[INFORMATION PRODUIT]
+________________________________________________________*/
+div.infoProduits {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1 / span 3;
@@ -1675,18 +1681,18 @@ div.dashboard div.accueilContenu div.infoProduits {
   grid-row: 2 / span 1;
 }
 
-div.dashboard div.accueilContenu div.infoProduits div.interfaceLiens {
+div.infoProduits div.interfaceLiens {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-div.dashboard div.accueilContenu div.infoProduits a {
+div.infoProduits a {
   margin-top: 2.5em;
   font-size: 1em;
 }
 
-div.dashboard div.accueilContenu div.infoProduits a div.numProduit {
+div.infoProduits a div.numProduit {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1699,18 +1705,14 @@ div.dashboard div.accueilContenu div.infoProduits a div.numProduit {
           align-items: center;
 }
 
-div.dashboard div.accueilContenu div.infoProduits a div.numProduit span.numero {
+div.infoProduits a div.numProduit span.numero {
   font-size: 5em;
 }
 
-div.dashboard div.accueilContenu div.infoProduits a div.numProduit span.txt {
+div.infoProduits a div.numProduit span.txt {
   font-size: 0.75em;
 }
 
-/*////[INFORMATION COMMANDE]
-________________________________________________________*/
-/*////[INFORMATION PRODUIT]
-________________________________________________________*/
 /*////[TITRE SECTION ADMIN]
 ________________________________________________________*/
 div.titreAdmin {
