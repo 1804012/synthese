@@ -1,0 +1,14 @@
+div.pages {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25em;
+
+    & a {
+        color: var(--blanc);
+        padding: 0.5em;
+        margin-top: 0.5em;
+        
+    }
+}

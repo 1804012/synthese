@@ -5,4 +5,68 @@ div.interfaceInventaire {
     flex-flow: column;
     padding: 2em;
     width: 70%;
+
+    & div.inventaireContenu {
+        display: flex;
+        flex-flow: column nowrap;    
+        width: 100%;
+        & div.inventaire {
+            display: grid;
+            grid-template-columns: 11em 2.5fr 0.5fr;
+            grid-template-rows: 11em;
+            grid-column-gap: 1em;
+            margin-bottom: 1em;
+            color: var(--blanc);
+
+            & div.image {
+                grid-column: 1 / span 1;
+                background-color: var(--translucide);
+                border-radius: 0.5em;
+                
+                & img {
+                    width: 10em;
+                    margin-top: 0.5em;
+                    margin-left: 0.5em;
+                    border-radius: 0.25em;
+                }
+            }
+
+            & div.description {
+                grid-column: 2 / span 1;
+                background-color: var(--translucide);
+                border-radius: 0.5em;
+
+                & h2 {
+                    margin-left: 1em;
+                    margin-top: 1em;
+                    font-size: 1.25em;
+                }
+
+                & p {
+                    padding: 0.5em;
+                    margin-left: 0.75em;
+                }
+            }
+
+            & div.gestionProduit {
+                grid-column: 3 / span 1;                
+                background-color: var(--translucide);
+                border-radius: 0.5em;
+                display: flex;
+                flex-flow: row wrap;
+
+                & span.material-icons {
+                    font-size: 3em;
+                    margin: auto;
+                }
+
+                & span.prix {
+                    font-size: 3em;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+            
+        }
+    }
 }

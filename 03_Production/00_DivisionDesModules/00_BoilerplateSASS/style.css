@@ -14,8 +14,6 @@ ________________________________________________________*/
   --marker: 'Permanent Marker', cursive;
 }
 
-/*////[MIXINS]
-________________________________________________________*/
 /*////[RESET]
 ________________________________________________________*/
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -1782,6 +1780,89 @@ div.interfaceInventaire {
   width: 70%;
 }
 
+div.interfaceInventaire div.inventaireContenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  width: 100%;
+}
+
+div.interfaceInventaire div.inventaireContenu div.inventaire {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 11em 2.5fr 0.5fr;
+      grid-template-columns: 11em 2.5fr 0.5fr;
+  -ms-grid-rows: 11em;
+      grid-template-rows: 11em;
+  grid-column-gap: 1em;
+  margin-bottom: 1em;
+  color: var(--blanc);
+}
+
+div.interfaceInventaire div.inventaireContenu div.inventaire div.image {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / span 1;
+  background-color: var(--translucide);
+  border-radius: 0.5em;
+}
+
+div.interfaceInventaire div.inventaireContenu div.inventaire div.image img {
+  width: 10em;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  border-radius: 0.25em;
+}
+
+div.interfaceInventaire div.inventaireContenu div.inventaire div.description {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / span 1;
+  background-color: var(--translucide);
+  border-radius: 0.5em;
+}
+
+div.interfaceInventaire div.inventaireContenu div.inventaire div.description h2 {
+  margin-left: 1em;
+  margin-top: 1em;
+  font-size: 1.25em;
+}
+
+div.interfaceInventaire div.inventaireContenu div.inventaire div.description p {
+  padding: 0.5em;
+  margin-left: 0.75em;
+}
+
+div.interfaceInventaire div.inventaireContenu div.inventaire div.gestionProduit {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / span 1;
+  background-color: var(--translucide);
+  border-radius: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+div.interfaceInventaire div.inventaireContenu div.inventaire div.gestionProduit span.material-icons {
+  font-size: 3em;
+  margin: auto;
+}
+
+div.interfaceInventaire div.inventaireContenu div.inventaire div.gestionProduit span.prix {
+  font-size: 3em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*////[NOM ADMIN]
 ________________________________________________________*/
 /*////[PRIX ADMIN]
@@ -1864,5 +1945,28 @@ div.interfacePopup a.popupClose span {
 
 .close {
   display: none;
+}
+
+div.pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.25em;
+}
+
+div.pages a {
+  color: var(--blanc);
+  padding: 0.5em;
+  margin-top: 0.5em;
 }
 /*# sourceMappingURL=style.css.map */
