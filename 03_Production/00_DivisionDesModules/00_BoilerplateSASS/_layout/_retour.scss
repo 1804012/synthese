@@ -1,0 +1,18 @@
+/*////[RETOUR EN HAUT DE LA PAGE]
+________________________________________________________*/
+div.retour {
+    position: fixed;
+    z-index: 5;
+    color: var(--blanc);
+    top: auto;
+    bottom: 2em;
+    right: auto;
+    left: 2em;
+    background-color: var(--translucide);
+    padding: 0.5em;
+    border-radius: 0.25em;
+
+    & span {
+        font-size: 2em;
+    }
+}
