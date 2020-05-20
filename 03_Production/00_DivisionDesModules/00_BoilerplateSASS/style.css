@@ -1894,6 +1894,10 @@ div.interfaceInventaire div.inventaireContenu div.inventaire div.gestionProduit 
   margin: auto;
 }
 
+div.interfaceInventaire div.inventaireContenu div.inventaire div.gestionProduit span.material-icons:hover {
+  color: var(--noir);
+}
+
 div.interfaceInventaire div.inventaireContenu div.inventaire div.gestionProduit span.prix {
   font-size: 3em;
   margin-left: auto;
@@ -2058,16 +2062,6 @@ div.interfaceModification div.boutonModif input:hover {
   color: var(--noir);
 }
 
-/*////[NOM ADMIN]
-________________________________________________________*/
-/*////[PRIX ADMIN]
-________________________________________________________*/
-/*////[IMAGE ADMIN]
-________________________________________________________*/
-/*////[DESCRIPTION ADMIN]
-________________________________________________________*/
-/*////[BOUTON MODIFIER & AJOUTER]
-________________________________________________________*/
 /*////[POPUP]
 ________________________________________________________*/
 div.interfacePopup {

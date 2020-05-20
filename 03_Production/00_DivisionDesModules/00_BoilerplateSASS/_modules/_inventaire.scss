@@ -58,6 +58,10 @@ div.interfaceInventaire {
                 & span.material-icons {
                     font-size: 3em;
                     margin: auto;
+
+                    &:hover {
+                        color: var(--noir);
+                    }
                 }
 
                 & span.prix {
